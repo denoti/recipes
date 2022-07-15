@@ -1,36 +1,123 @@
-body{
+html {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+nav > ul > li {
+    padding: 3px;
+}
+
+header nav ul li a:hover {
+    color: brown;
+}
+
+header nav ul li a:active {
+    color: blue;
+}
+
+nav ul li a:visited, nav ul li a  {
+    color: black;
+}
+
+
+/* MAIN */
+.main {
+    background-color: blanchedalmond;
+    padding-left: 10px;
+    padding-right: 3px;
+    /* margin-top: 3px; */
+    border-radius: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.cook {
+    padding-top: 10px;
+}
+
+.coffee {
+    display: flex;
+    justify-content: center;
+}
+
+.coffee > figure > img, .cooking > figure > img {
+    border-radius: 5px;
+}
+
+.coffee > figure > img:hover, .cooking > figure > img:hover {
+    transform: scale(1.5);
+    transition-duration: 50ms;
+    transition-timing-function: linear;
+}
+
+
+ul > li {
+    list-style-type: none;
+}
+
+ul li a, a {
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    /* width: 60%; */
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightskyblue;
-    /* width: 600px; */
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+footer a {
+    padding: 10px;
+}
+
+
+/* SPECIAL MENU */
+.special h3 a:visited {
+    color: black;
+}
+
+.special h3 a:hover {
+    color: brown;
+}
+
+.special h3 a:active {
+    color: blue;
+}
+
+h3 {
+    text-align: center;
 }
 
 .icons {
     width: 50px;
+    height: 50%;
 }
 
-footer {
-    display:flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.socials {
-    display: flex;
-    gap: 16px;
-    justify-content: flex-end;
-}
-
-.mov-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.homepage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+img {
+    width: 100px;
+    height: 100px;
 }
