@@ -117,7 +117,108 @@ h3 {
     height: 50%;
 }
 
-img {
-    width: 100px;
-    height: 100px;
+/* SALISBURY MIDWEST */
+.s-image {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 5px;
+}
+.midwest {
+    text-align: center;
+}
+
+header nav ul li button {
+    border-color: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+/* Thai Pork */
+
+.t-image {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 5px;
+}
+.thai {
+    text-align: center;
+}
+
+header nav ul li button {
+    border-color: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+/* Keto */
+
+.k-image {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 5px;
+  }
+
+.keto {
+    text-align: center;
+}
+  
+ 
+header nav ul li button {
+    border-color: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+main section div.cooking img {
+    width: 50%;
+}
+
+main section div img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 540px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    div .coffee {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icons {
+        width: 50px;
+        height: 40%;
+    }
+
+    footer > .foot {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer > .foot {
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .common {
+        width: 70%;
+        height: 50%;
+    }
 }
