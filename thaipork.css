@@ -1,4 +1,17 @@
 .t-image {
+    margin: 0 auto;
     width: 300px;
-    border-radius: 10px;
+    height: 300px;
+    display: block;
+    border-radius: 5px;
+}
+.thai {
+    text-align: center;
+}
+
+header nav ul li button {
+    border-color: none;
+    border-radius: 5px;
+    /* background-color: brown; */
+    font-size: medium;
 }
