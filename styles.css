@@ -62,12 +62,12 @@ nav ul li a:visited, nav ul li a  {
 
 .coffee > figure > img, .cooking > figure > img {
     border-radius: 5px;
+    transition-duration: 800ms;
+    transition-timing-function: linear;
 }
 
 .coffee > figure > img:hover, .cooking > figure > img:hover {
-    transform: scale(1.5);
-    transition-duration: 50ms;
-    transition-timing-function: linear;
+    transform: scale(1.3);
 }
 
 
