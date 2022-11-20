@@ -9,6 +9,12 @@ body {
     margin: 0 auto;
 }
 
+header nav ul li button {
+    border: none;
+    outline: none;
+    font-size: medium;
+}
+
 /* HEADER */
 .header {
     display: flex;
@@ -16,6 +22,8 @@ body {
     background-color: bisque;
     padding: 10px;
     border-radius: 5px;
+    border: none;
+    outline: none;
 }
 
 nav > ul {
@@ -27,9 +35,16 @@ nav > ul {
 nav > ul > li {
     padding: 3px;
 }
-
+header nav ul li a{
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
 header nav ul li a:hover {
-    color: brown;
+    color: white;
+    background-color: brown;
 }
 
 header nav ul li a:active {
@@ -46,7 +61,6 @@ nav ul li a:visited, nav ul li a  {
     background-color: blanchedalmond;
     padding-left: 10px;
     padding-right: 3px;
-    /* margin-top: 3px; */
     border-radius: 5px;
     padding-bottom: 5px;
     margin-bottom: 5px;
@@ -63,12 +77,12 @@ nav ul li a:visited, nav ul li a  {
 
 .coffee > figure > img, .cooking > figure > img {
     border-radius: 5px;
-    transition-duration: 800ms;
+    transition-duration: 0.3s;
     transition-timing-function: linear;
 }
 
 .coffee > figure > img:hover, .cooking > figure > img:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 
@@ -111,14 +125,30 @@ footer a {
 .special h3 a:active {
     color: blue;
 }
-
-h3 {
+h3{
     text-align: center;
+}
+.special h3 a {
+   
+    color:  brown;
 }
 
 .icons {
-    width: 50px;
-    height: 50%;
+    width: 35px;
+    text-align: center;
+    font-size: 2rem;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+.icons:hover{
+    color: whitesmoke;
+    background: blue;
+
+}
+.icons:visited{
+    color: blue;
 }
 
 /* SALISBURY MIDWEST */
@@ -131,12 +161,6 @@ h3 {
 }
 .midwest {
     text-align: center;
-}
-
-header nav ul li button {
-    border-color: none;
-    border-radius: 5px;
-    font-size: medium;
 }
 
 /* Thai Pork */
@@ -152,12 +176,6 @@ header nav ul li button {
     text-align: center;
 }
 
-header nav ul li button {
-    border-color: none;
-    border-radius: 5px;
-    font-size: medium;
-}
-
 /* Keto */
 
 .k-image {
@@ -170,13 +188,6 @@ header nav ul li button {
 
 .keto {
     text-align: center;
-}
-  
- 
-header nav ul li button {
-    border-color: none;
-    border-radius: 5px;
-    font-size: medium;
 }
 
 main section div.cooking img {
@@ -192,6 +203,9 @@ main section div img {
         display: flex;
         flex-direction: column;
     }
+    header nav ul li{
+        margin-bottom: 8px;
+    }
 
     body {
         width: 90vw;
@@ -206,24 +220,17 @@ main section div img {
     }
 
     .icons {
-        width: 50px;
-        height: 40%;
+     font-size: 2rem;
     }
 
-    footer > .foot {
+    footer .foot {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
 
-    footer > .foot {
+    footer .foot {
         margin: 0 auto;
         padding-top: 30px;
-     
-    }
-
-    .common {
-        width: 70%;
-        height: 50%;
     }
 }
